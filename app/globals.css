@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 500px;
+  --breakpoint-md: 768px;
+  --breakpoint-md2: 900px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1600px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 270px); /* 4 columns */
+  grid-template-rows: repeat(2, 300px);    /* 2 rows */
+  gap: 30px;
+}
+
+.div1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.div2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.div3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.div4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}

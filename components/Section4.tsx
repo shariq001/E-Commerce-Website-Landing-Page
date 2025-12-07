@@ -1,0 +1,110 @@
+import { Star } from 'lucide-react'
+import Image from 'next/image'
+import React from 'react'
+import { Poppins } from "next/font/google";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
+
+const Section4 = () => {
+  return (
+    <div className='flex justify-start items-center xl:justify-between gap-[40px] xl:gap-[12px] 2xl:px-[100px] xl:px-[80px] lg:px-[60px] md:px-[30px] xs:px-[10px] my-[30px] overflow-x-auto scroll-smooth no-scrollbar py-[30px]'>
+
+        {/* 1 */}
+        <div className='w-[270px] flex flex-col gap-[6px]'>
+          <div className='w-[270px] h-[250px] bg-gray-200'>
+            <Image src='/coat.png' width={270} height={250} alt='GamePad' />
+          </div>
+
+          <h3 className={`font-medium ${poppins.className}`}>The north coat</h3>
+
+          <p className='text-[#DB4444]'>$260 <s className='text-gray-400'> $360</s></p>
+
+          <div className='flex justify-start items-center gap-[6px]'>
+            <div className='flex justify-start items-center gap-[2px]'>
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+            </div>
+
+            <p className='text-gray-400'>(65)</p>
+          </div>
+        </div>
+
+        {/* 2 */}
+        <div className='w-[270px] flex flex-col gap-[6px]'>
+          <div className='w-[270px] h-[250px] bg-gray-200'>
+            <Image src='/purse.png' width={270} height={250} alt='Keyboard' />
+          </div>
+
+          <h3 className={`font-medium ${poppins.className}`}>Gucci duffle bag</h3>
+
+          <p className='text-[#DB4444]'>$960 <s className='text-gray-400'> $1160</s></p>
+
+          <div className='flex justify-start items-center gap-[6px]'>
+            <div className='flex justify-start items-center gap-[2px]'>
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#a3a3a3] fill-[#a3a3a3] size-[18px]" />
+            </div>
+
+            <p className='text-gray-400'>(65)</p>
+          </div>
+        </div>
+
+        {/* 3 */}
+        <div className='w-[270px] flex flex-col gap-[6px]'>
+          <div className='w-[270px] h-[250px] bg-gray-200'>
+            <Image src='/cooler.png' width={270} height={250} alt='PC' />
+          </div>
+
+          <h3 className={`font-medium ${poppins.className}`}>RGB liquid CPU Cooler</h3>
+
+          <p className='text-[#DB4444]'>$160 <s className='text-gray-400'> $170</s></p>
+
+          <div className='flex justify-start items-center gap-[6px]'>
+            <div className='flex justify-start items-center gap-[2px]'>
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#a3a3a3] fill-[#a3a3a3] size-[18px]" />
+            </div>
+
+            <p className='text-gray-400'>(65)</p>
+          </div>
+        </div>
+
+        {/* 4 */}
+        <div className='w-[270px] flex flex-col gap-[6px]'>
+          <div className='w-[270px] h-[250px] bg-gray-200'>
+            <Image src='/shelf.png' width={270} height={250} alt='Book Shelf' />
+          </div>
+
+          <h3 className={`font-medium ${poppins.className}`}>Small BookSelf</h3>
+
+          <p className='text-[#DB4444]'>$360</p>
+
+          <div className='flex justify-start items-center gap-[6px]'>
+            <div className='flex justify-start items-center gap-[2px]'>
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+              <Star className="text-[#FFAD33] fill-[#FFAD33] size-[18px]" />
+            </div>
+
+            <p className='text-gray-400'>(65)</p>
+          </div>
+        </div>
+        
+      </div>
+  )
+}
+
+export default Section4
